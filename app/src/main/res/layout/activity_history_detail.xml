@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    tools:context=".ui.history.HistoryDetailActivity">
+
+    <TextView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Back"
+        android:textColor="@color/light_black"
+        android:textSize="16sp"
+        android:gravity="center|start"
+        android:drawablePadding="8dp"
+        android:drawableLeft="@drawable/round_arrow_back_ios_new_24"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="355dp"
+        android:rowCount="1"
+        android:columnCount="2">
+
+        <TextView
+            android:textAlignment="textStart"
+            android:paddingVertical="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="0dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:text="Selesai"
+            android:textSize="12sp"
+            android:textColor="@color/light_black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_gravity="end"
+            android:paddingVertical="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="See Detail"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:gravity="end"/>
+
+    </GridLayout>
+
+    <View
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="355dp"
+        android:rowCount="2"
+        android:columnCount="2">
+
+        <TextView
+            android:id="@+id/checkoutId"
+            android:textAlignment="textStart"
+            android:paddingVertical="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="0dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            tools:text="@tools:sample/lorem/random"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_gravity="end"
+            android:paddingVertical="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="24dp"
+            android:text="See Invoice"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:gravity="end"/>
+
+        <TextView
+            android:textAlignment="textStart"
+            android:paddingVertical="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="0dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:text="Timestamp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/checkoutDate"
+            android:layout_gravity="end"
+            android:paddingVertical="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="24dp"
+            android:text="07 Jul 2023, 18:55 WIB"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:textSize="12sp"
+            android:gravity="end"/>
+
+    </GridLayout>
+
+    <View
+        android:layout_width="409dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"/>
+
+</LinearLayout>

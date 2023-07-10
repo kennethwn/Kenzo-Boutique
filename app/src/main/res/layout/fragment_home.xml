@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/outletId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/custom_background_card_home">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/carousel_main"
+                        android:textSize="32sp"
+                        android:textColor="@color/light_black"
+                        android:textStyle="bold"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginStart="24dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/carousel_desc"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginStart="24dp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="36dp"
+                    android:src="@drawable/location_image"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Arrival"
+                android:padding="24dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/light_black"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/kenzoPatchHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/custom_card_new">
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:padding="16dp"
+                            android:src="@drawable/kenzo_patch"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4.9 (66 reviews)"
+                            android:paddingStart="12dp"
+                            android:gravity="center|start"
+                            android:drawableLeft="@drawable/round_star_24"
+                            android:drawablePadding="4dp"
+                            android:textColor="@color/light_black"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kenzo Patch"
+                            android:paddingStart="16dp"
+                            android:textColor="@color/light_black"
+                            android:textStyle="bold"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rp1.200.000,00"
+                            android:paddingStart="16dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/light_black"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/supremeLvHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/custom_card_new">
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:padding="16dp"
+                            android:src="@drawable/supreme_x_lv_hoodie"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4.7 (46 reviews)"
+                            android:paddingStart="12dp"
+                            android:gravity="center|start"
+                            android:drawableLeft="@drawable/round_star_24"
+                            android:drawablePadding="4dp"
+                            android:textColor="@color/light_black"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Supreme x LV"
+                            android:paddingStart="16dp"
+                            android:gravity=""
+                            android:textColor="@color/light_black"
+                            android:textStyle="bold"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rp10.000.000,00"
+                            android:paddingStart="16dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/light_black"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/bapeGalaxyHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/custom_card_new">
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:padding="16dp"
+                            android:src="@drawable/bape_galaxy"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4.5 (51 reviews)"
+                            android:paddingStart="12dp"
+                            android:gravity="center|start"
+                            android:drawableLeft="@drawable/round_star_24"
+                            android:drawablePadding="4dp"
+                            android:textColor="@color/light_black"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bape Galaxy Tee"
+                            android:paddingStart="16dp"
+                            android:gravity=""
+                            android:textColor="@color/light_black"
+                            android:textStyle="bold"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rp2.000.000,00"
+                            android:paddingStart="16dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/light_black"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Most Popular"
+                android:padding="24dp"
+                android:textColor="@color/light_black"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:id="@+id/burberryCoatHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_card_new"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:padding="16dp"
+                        android:src="@drawable/burberry_coat" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/round_star_24"
+                        android:drawablePadding="4dp"
+                        android:gravity="center|start"
+                        android:paddingStart="12dp"
+                        android:text="5 (666 reviews)"
+                        android:textColor="@color/light_black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="16dp"
+                        android:text="Burberry Coat"
+                        android:textColor="@color/light_black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="16dp"
+                        android:paddingBottom="8dp"
+                        android:text="Rp25.000.000,00"
+                        android:textColor="@color/light_black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/programmerTeeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_card_new"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:padding="16dp"
+                        android:src="@drawable/premium_tee" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/round_star_24"
+                        android:drawablePadding="4dp"
+                        android:gravity="center|start"
+                        android:paddingStart="12dp"
+                        android:text="4.9 (99 reviews)"
+                        android:textColor="@color/light_black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="16dp"
+                        android:text="Programmer Tee"
+                        android:textColor="@color/light_black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="16dp"
+                        android:paddingBottom="8dp"
+                        android:text="Rp4.000.000,00"
+                        android:textColor="@color/light_black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:id="@+id/versaceTeeHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_card_new"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:padding="16dp"
+                        android:src="@drawable/versace_tee" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/round_star_24"
+                        android:drawablePadding="4dp"
+                        android:gravity="center|start"
+                        android:paddingStart="12dp"
+                        android:text="4.5 (29 reviews)"
+                        android:textColor="@color/light_black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="16dp"
+                        android:text="Versace Tee"
+                        android:textColor="@color/light_black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="16dp"
+                        android:paddingBottom="8dp"
+                        android:text="Rp7.500.000,00"
+                        android:textColor="@color/light_black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lacosteLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_card_new"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:padding="16dp"
+                        android:src="@drawable/lacoste_long" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/round_star_24"
+                        android:drawablePadding="4dp"
+                        android:gravity="center|start"
+                        android:paddingStart="12dp"
+                        android:text="4.0 (8 reviews)"
+                        android:textColor="@color/light_black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="16dp"
+                        android:text="Lacoste Long"
+                        android:textColor="@color/light_black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="16dp"
+                        android:paddingBottom="8dp"
+                        android:text="Rp3.300.000,00"
+                        android:textColor="@color/light_black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

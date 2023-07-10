@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kenzo Boutique</string>
+    <string name="title_sign_in">Sign in to your\nAccount</string>
+    <string name="content_sign_in">find your style with us</string>
+    <string name="carousel_main">Find our\nonsite store</string>
+    <string name="carousel_desc">and get the BIG DEAL.</string>
+    <string name="copyright">KENZO BOUTIQUE\nLA75 - 2501973722 - Kenneth W. N.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

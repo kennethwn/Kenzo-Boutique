@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    tools:context=".ui.order.OrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:text="Back"
+            android:textColor="@color/light_black"
+            android:textSize="16sp"
+            android:gravity="center|start"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/round_arrow_back_ios_new_24"/>
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/kenzo_patch"/>
+
+        <TextView
+            android:id="@+id/productRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4.9 (66 reviews)"
+            android:paddingStart="24dp"
+            android:gravity="center|start"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/round_star_24"
+            android:drawablePadding="4dp"
+            android:textColor="@color/light_black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kenzo Patch"
+            android:textColor="@color/light_black"
+            android:paddingStart="24dp"
+            android:textSize="32dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Size"
+                android:paddingTop="24dp"
+                android:paddingStart="24dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black">
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/sizeType"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:paddingStart="10dp">
+
+                <RadioButton
+                    android:id="@+id/small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S"
+                    android:background="@drawable/radio_selector"
+                    android:button="@drawable/null_radio_button"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:paddingHorizontal="24dp"
+                    android:textColor="@drawable/radio_text_selected"
+                    android:layout_marginHorizontal="14dp"/>
+
+                <RadioButton
+                    android:id="@+id/medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:background="@drawable/radio_selector"
+                    android:button="@drawable/null_radio_button"
+                    android:elevation="4dp"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center"
+                    android:paddingHorizontal="24dp"
+                    android:textColor="@drawable/radio_text_selected"
+                    android:layout_marginHorizontal="14dp"/>
+
+                <RadioButton
+                    android:id="@+id/large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="L"
+                    android:background="@drawable/radio_selector"
+                    android:button="@drawable/null_radio_button"
+                    android:elevation="4dp"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center"
+                    android:paddingHorizontal="24dp"
+                    android:textColor="@drawable/radio_text_selected"
+                    android:layout_marginHorizontal="14dp"/>
+
+                <RadioButton
+                    android:id="@+id/XLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XL"
+                    android:background="@drawable/radio_selector"
+                    android:button="@drawable/null_radio_button"
+                    android:elevation="4dp"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center"
+                    android:paddingHorizontal="24dp"
+                    android:textColor="@drawable/radio_text_selected"
+                    android:layout_marginHorizontal="14dp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:text="Rp800.000,00"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginStart="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add to Cart"
+            android:layout_margin="16dp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:padding="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
